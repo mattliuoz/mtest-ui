@@ -24,7 +24,7 @@ class AddCustomerForm extends React.Component {
         getCustomers("orderby=id&orderbydirection=desc&page=1&RecordsPerPage=100").then(res => {
             if (res.isSuccess) {
                 const data = res.data;
-                this.setState({ data })
+                this.setState({ data });
 
             } else {
                 const error = res.data;

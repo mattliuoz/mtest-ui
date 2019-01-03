@@ -10,7 +10,7 @@ class AddCustomerPage extends React.Component {
     setRedirect = () => {
         this.setState({
             redirect: true
-        })
+        });
     }
     renderRedirect = () => {
         if (this.state.redirect) {
